@@ -1,0 +1,4 @@
+name: Calculator
+version: 1.0
+author: Xiaopi0
+main: calculator.MainKt
