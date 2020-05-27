@@ -7,21 +7,15 @@ fun main(args: Array<String>) {
 
     var loop = true
     while (loop == true) {
-        println("Write two numbers to be added.")
+        println("Write two numbers to be added. -0 to quit(it doesn't matter where)")
         //Create and initialize the variables for the numbers you put in
         val input_1 = scanner.nextInt()
         val input_2 = scanner.nextInt()
-
-        println(input_1 + input_2)
-        println()
-
-        println("If you want to quit press: 0. If you want to continue press: 1")
-        val checkIfQuitOrNot = scanner.nextInt()
-
-        if (checkIfQuitOrNot == 1) {
-            loop = true
-        }else if (checkIfQuitOrNot == 0) {
+        if (input_1 == -0 || input_2 == -0) {
             loop = false
+        }else {
+            println(input_1 + input_2)
+            println()
         }
     }
 }
