@@ -1,6 +1,6 @@
 package com.Xiaopi0.calculatorkotlinone
 
-import java.util.Scanner
+import java.util.*
 
 fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
