@@ -5,9 +5,9 @@ import java.util.*
 fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
 
-    var loop = false
+    var loop = true
     while (loop == true) {
-        println("Write two numbers to do things with and which operator you want to use. \n? to see list of commands")
+        println("Write how many numbers you want to use or ? to see list of commands")
         val input_1 = scanner.next()
         //Commands
         if (input_1 == "?") {
@@ -18,28 +18,16 @@ fun main(args: Array<String>) {
             println()
         } else if (input_1 == "quit") {
             loop = false
-        } else {
-            val input_2 = scanner.next()
-            val output_1 = input_1.toInt()
-            val output_2 = input_2.toInt()
-            val operator_1 = scanner.next()
-            if (operator_1 == "+") {
-                println(output_1 + output_2)
-                println()
-            }else if (operator_1 == "-") {
-                println(output_1 - output_2)
-                println()
-            }else if (operator_1 == "*" || operator_1 == "x") {
-                println(output_1 * output_2)
-                println()
-            }else if (operator_1 == "/") {
-                println(output_1 / output_2)
-                println()
-            }else if (operator_1 == "%") {
-                println(output_1 % output_2)
-                println()
-            }else {
-                println("Error: invalid operator.")
+        }else {
+            val input_11 = input_1.toInt()
+            val numbers = DoubleArray(input_11)
+            var index = 0
+            var num = 1
+            for (i in 0..input_11 - 1) {
+                println(if (num == 1) {"Write mumber $num(decimals with ',' not '.')"}else{"Write mumber $num"})
+                numbers[index] = scanner.nextDouble()
+                index += 1
+                num +=1
             }
         }
 
