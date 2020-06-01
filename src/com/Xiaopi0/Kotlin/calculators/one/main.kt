@@ -5,7 +5,7 @@ import java.util.*
 fun main(args: Array<String>) {
     val scanner = Scanner(System.`in`)
 
-    var loop = true
+    var loop = false
     while (loop == true) {
         println("Write two numbers to do things with and which operator you want to use. \n? to see list of commands")
         val input_1 = scanner.next()
