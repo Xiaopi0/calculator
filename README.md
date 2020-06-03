@@ -1,7 +1,7 @@
 # Calculator Project
-This is the website for my calculator project in kotlin
+This is the website for my calculator project in kotlin.
+## Snapshot of source code(It's being almost totally rewritten).
 ```markdown
-
 package com.Xiaopi0.Kotlin.calculators.one
 
 import java.util.*
